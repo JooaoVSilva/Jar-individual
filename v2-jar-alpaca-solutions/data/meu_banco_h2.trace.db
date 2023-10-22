@@ -1,0 +1,55 @@
+2023-10-22 15:23:16.987507-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table IF NOT EXISTS servidor (\000aidservidor int primary key auto_increment,\000aporcentagem_uso_disco decimal,\000aporcentagem_uso_memoria decimal,\000aquantidade_de_ram decimal,\000amemoria_disponivel decimal,\000atamanho_total_disco decimal,\000aporcentagem_uso_cpu decimal,\000atamanho_disponivel_do_disco decimal,\000amemoria_total decimal,\000aquantidade_de_bytes_recebidos decimal,\000aquantidade_de_bytes_enviados decimal,\000adthora datetime default current_timestamp,\000apacotes_recebidos decimal,\000apacotes_enviados decimal[*];"; expected "(, ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+create table IF NOT EXISTS servidor (
+idservidor int primary key auto_increment,
+porcentagem_uso_disco decimal,
+porcentagem_uso_memoria decimal,
+quantidade_de_ram decimal,
+memoria_disponivel decimal,
+tamanho_total_disco decimal,
+porcentagem_uso_cpu decimal,
+tamanho_disponivel_do_disco decimal,
+memoria_total decimal,
+quantidade_de_bytes_recebidos decimal,
+quantidade_de_bytes_enviados decimal,
+dthora datetime default current_timestamp,
+pacotes_recebidos decimal,
+pacotes_enviados decimal; [42001-222]
+2023-10-22 15:24:17.274718-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SERVIDOR" not found; SQL statement:
+drop table servidor [42102-222]
+2023-10-22 15:25:15.263223-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table IF NOT EXISTS servidor (\000aidservidor int primary key auto_increment,\000aporcentagem_uso_disco decimal,\000aporcentagem_uso_memoria decimal,\000aquantidade_de_ram decimal,\000amemoria_disponivel decimal,\000atamanho_total_disco decimal,\000aporcentagem_uso_cpu decimal,\000atamanho_disponivel_do_disco decimal,\000amemoria_total decimal,\000aquantidade_de_bytes_recebidos decimal,\000aquantidade_de_bytes_enviados decimal,\000adthora datetime default current_timestamp,\000apacotes_recebidos decimal,\000apacotes_enviados decimal[*]"; expected "(, ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+create table IF NOT EXISTS servidor (
+idservidor int primary key auto_increment,
+porcentagem_uso_disco decimal,
+porcentagem_uso_memoria decimal,
+quantidade_de_ram decimal,
+memoria_disponivel decimal,
+tamanho_total_disco decimal,
+porcentagem_uso_cpu decimal,
+tamanho_disponivel_do_disco decimal,
+memoria_total decimal,
+quantidade_de_bytes_recebidos decimal,
+quantidade_de_bytes_enviados decimal,
+dthora datetime default current_timestamp,
+pacotes_recebidos decimal,
+pacotes_enviados decimal [42001-222]
+2023-10-22 15:30:18.783525-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table IF NOT EXISTS servidor (\000aidservidor int primary key auto_increment,\000aporcentagem_uso_disco decimal,\000aporcentagem_uso_memoria decimal,\000aquantidade_de_ram decimal,\000amemoria_disponivel decimal,\000atamanho_total_disco decimal,\000aporcentagem_uso_cpu decimal,\000atamanho_disponivel_do_disco decimal,\000amemoria_total decimal,\000aquantidade_de_bytes_recebidos decimal,\000aquantidade_de_bytes_enviados decimal,\000apacotes_recebidos decimal,\000apacotes_enviados decimal,\000adthora datetime default current_timestamp\000a[*]"; expected "(, [, ., ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+create table IF NOT EXISTS servidor (
+idservidor int primary key auto_increment,
+porcentagem_uso_disco decimal,
+porcentagem_uso_memoria decimal,
+quantidade_de_ram decimal,
+memoria_disponivel decimal,
+tamanho_total_disco decimal,
+porcentagem_uso_cpu decimal,
+tamanho_disponivel_do_disco decimal,
+memoria_total decimal,
+quantidade_de_bytes_recebidos decimal,
+quantidade_de_bytes_enviados decimal,
+pacotes_recebidos decimal,
+pacotes_enviados decimal,
+dthora datetime default current_timestamp
+ [42001-222]
